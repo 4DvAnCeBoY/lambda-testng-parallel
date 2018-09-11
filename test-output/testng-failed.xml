@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Pool]" guice-stage="DEVELOPMENT">
+  <parameter name="environment" value="firefox"/>
+  <parameter name="config" value="suite.conf.json"/>
+  <test thread-count="3" parallel="classes" name="PoolTestChrome">
+    <parameter name="environment" value="chrome"/>
+    <parameter name="config" value="suite.conf.json"/>
+    <classes>
+      <class name="com.browserstack.suite.SuiteTest01"/>
+      <class name="com.browserstack.suite.SuiteTest02"/>
+      <class name="com.browserstack.suite.SuiteTest03"/>
+      <class name="com.browserstack.suite.SuiteTest04"/>
+      <class name="com.browserstack.suite.SuiteTest05"/>
+      <class name="com.browserstack.suite.SuiteTest06"/>
+      <class name="com.browserstack.suite.SuiteTest07"/>
+      <class name="com.browserstack.suite.SuiteTest08"/>
+      <class name="com.browserstack.suite.SuiteTest09"/>
+      <class name="com.browserstack.suite.SuiteTest10"/>
+    </classes>
+  </test> <!-- PoolTestChrome -->
+  <test thread-count="3" parallel="classes" name="PoolTestFirefox">
+    <parameter name="environment" value="firefox"/>
+    <parameter name="config" value="suite.conf.json"/>
+    <classes>
+      <class name="com.browserstack.suite.SuiteTest01"/>
+      <class name="com.browserstack.suite.SuiteTest02"/>
+      <class name="com.browserstack.suite.SuiteTest03"/>
+      <class name="com.browserstack.suite.SuiteTest04"/>
+      <class name="com.browserstack.suite.SuiteTest05"/>
+      <class name="com.browserstack.suite.SuiteTest06"/>
+      <class name="com.browserstack.suite.SuiteTest07"/>
+      <class name="com.browserstack.suite.SuiteTest08"/>
+      <class name="com.browserstack.suite.SuiteTest09"/>
+      <class name="com.browserstack.suite.SuiteTest10"/>
+    </classes>
+  </test> <!-- PoolTestFirefox -->
+  <test parallel="classes" name="PoolTestChrome(failed)">
+    <parameter name="environment" value="chrome"/>
+    <parameter name="config" value="suite.conf.json"/>
+    <classes>
+      <class name="com.browserstack.suite.SuiteTest04">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest04 -->
+      <class name="com.browserstack.suite.SuiteTest03">
+        <methods>
+          <include name="test_03"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest03 -->
+      <class name="com.browserstack.suite.SuiteTest02">
+        <methods>
+          <include name="test_02"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest02 -->
+      <class name="com.browserstack.suite.SuiteTest05">
+        <methods>
+          <include name="test_05"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest05 -->
+      <class name="com.browserstack.suite.SuiteTest10">
+        <methods>
+          <include name="test_10"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest10 -->
+      <class name="com.browserstack.suite.SuiteTest08">
+        <methods>
+          <include name="test_08"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest08 -->
+      <class name="com.browserstack.suite.SuiteTest09">
+        <methods>
+          <include name="test_09"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest09 -->
+      <class name="com.browserstack.suite.SuiteTest06">
+        <methods>
+          <include name="test_06"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest06 -->
+      <class name="com.browserstack.suite.SuiteTest01">
+        <methods>
+          <include name="test_01"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest01 -->
+      <class name="com.browserstack.suite.SuiteTest07">
+        <methods>
+          <include name="test_07"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest07 -->
+    </classes>
+  </test> <!-- PoolTestChrome(failed) -->
+  <test parallel="classes" name="PoolTestFirefox(failed)">
+    <parameter name="environment" value="firefox"/>
+    <parameter name="config" value="suite.conf.json"/>
+    <classes>
+      <class name="com.browserstack.suite.SuiteTest04">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest04 -->
+      <class name="com.browserstack.suite.SuiteTest03">
+        <methods>
+          <include name="test_03"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest03 -->
+      <class name="com.browserstack.suite.SuiteTest02">
+        <methods>
+          <include name="test_02"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest02 -->
+      <class name="com.browserstack.suite.SuiteTest10">
+        <methods>
+          <include name="test_10"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest10 -->
+      <class name="com.browserstack.suite.SuiteTest05">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest05 -->
+      <class name="com.browserstack.suite.SuiteTest08">
+        <methods>
+          <include name="test_08"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest08 -->
+      <class name="com.browserstack.suite.SuiteTest09">
+        <methods>
+          <include name="test_09"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest09 -->
+      <class name="com.browserstack.suite.SuiteTest06">
+        <methods>
+          <include name="test_06"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest06 -->
+      <class name="com.browserstack.suite.SuiteTest01">
+        <methods>
+          <include name="test_01"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest01 -->
+      <class name="com.browserstack.suite.SuiteTest07">
+        <methods>
+          <include name="test_07"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteTest07 -->
+    </classes>
+  </test> <!-- PoolTestFirefox(failed) -->
+</suite> <!-- Failed suite [Pool] -->

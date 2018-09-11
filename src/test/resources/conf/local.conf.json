@@ -1,0 +1,19 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "sirajuddinkhan3",
+  "key": "dy1sfuCvBGGL5Tz4dHpM",
+  "runtype": "",
+
+  "capabilities": {
+    "build": "testng-lambdatest",
+    "name": "local_test",
+    "browserstack.debug": true,
+    "browserstack.local": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    }
+  }
+}

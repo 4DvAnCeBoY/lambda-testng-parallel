@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Single]" guice-stage="DEVELOPMENT">
+  <parameter name="environment" value="chrome"/>
+  <parameter name="config" value="single.conf.json"/>
+  <test name="SingleTest">
+    <parameter name="environment" value="chrome"/>
+    <parameter name="config" value="single.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+      <class name="com.browserstack.suite.SuiteTest01"/>
+      <class name="com.browserstack.suite.SuiteTest02"/>
+      <class name="com.browserstack.suite.SuiteTest03"/>
+      <class name="com.browserstack.suite.SuiteTest04"/>
+      <class name="com.browserstack.suite.SuiteTest05"/>
+      <class name="com.browserstack.suite.SuiteTest06"/>
+      <class name="com.browserstack.suite.SuiteTest07"/>
+      <class name="com.browserstack.suite.SuiteTest08"/>
+      <class name="com.browserstack.suite.SuiteTest09"/>
+      <class name="com.browserstack.suite.SuiteTest10"/>
+    </classes>
+  </test> <!-- SingleTest -->
+</suite> <!-- Failed suite [Single] -->

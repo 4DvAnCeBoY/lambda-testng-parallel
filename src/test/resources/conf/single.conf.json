@@ -1,0 +1,18 @@
+{
+ "server": "hub-cloud.browserstack.com",
+  "user": "sirajuddinkhan3",
+  "key": "dy1sfuCvBGGL5Tz4dHpM",
+  "runtype": "single",
+
+  "capabilities": {
+    "build": "SingleSessionMultiTest",
+    "name": "single_test",
+    "browserstack.debug": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Single">
+    <test name="SingleTest">
+        <parameter name="config" value="single.conf.json"/>
+        <parameter name="environment" value="chrome"/>
+        <classes>
+            <class name="com.lambdatest.SingleTest"/>
+            <class name="com.lambdatest.suite.SuiteTest01"/>
+            <class name="com.lambdatest.suite.SuiteTest02"/>
+            <class name="com.lambdatest.suite.SuiteTest03"/>
+            <class name="com.lambdatest.suite.SuiteTest04"/>
+            <class name="com.lambdatest.suite.SuiteTest05"/>
+            <class name="com.lambdatest.suite.SuiteTest06"/>
+            <class name="com.lambdatest.suite.SuiteTest07"/>
+            <class name="com.lambdatest.suite.SuiteTest08"/>
+            <class name="com.lambdatest.suite.SuiteTest09"/>
+            <class name="com.lambdatest.suite.SuiteTest10"/>
+        </classes>
+    </test>
+</suite>
